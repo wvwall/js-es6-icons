@@ -101,6 +101,9 @@ const cards = [
 	}
 ];
 
+//COMBINO LE PROPRIETA' DEGLI OGGETTI PER MOSTRARE LE ICONE
+
+	
 
 	$("#cat").append(`<i class = " ${cards[0].family} ${cards[0].prefix}${cards[0].name} "></i>`);
 	$("#cat").append(`<h4> ${cards[0].name} </h4>`);
@@ -150,7 +153,7 @@ const cards = [
 	$("#secret").append(`<i class = " ${cards[15].family} ${cards[0].prefix}${cards[15].name} "></i>`);
 	$("#secret").append(`<h4> ${cards[15].name} </h4>`);
 
-
+/* 
 	cards.forEach((element) => {
 		
 			if (element.type === "animal" ) {
@@ -161,7 +164,14 @@ const cards = [
 				$("#main-cards").children().addClass("users");
 			}
 			
-	}); 
+	});  */
+
+	//AGGIUNGO LA CLASSE PER I VARI COLORI DELLE ICONE
+
+		$(".an i").addClass("animals");
+		$(".veg i").addClass("vegetables");
+		$(".us i").addClass("users");
+
 
 	
 
@@ -169,6 +179,8 @@ const cards = [
 		$("#main-cards").children().html(`<i class = " ${cards[i].family} ${cards[i].prefix}${cards[i].name} "></i>`);
 		
 	} */
+
+	//MOSTRO AL CLICK LE CARDS SELEZIONATE
 
 	$("#animals").click( () => {
 		$(".veg").addClass("none");
