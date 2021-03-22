@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#top-nav {
+    width: 100vw;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+#top-nav h1 {
+    margin-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #29B1DD;
+}
+
+#bottom-nav {
+    width: 100vw;
+    height: 60px;
+    background-color: #29B1DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+#bottom-nav label  {
+    color: #fff;
+    margin-right: 20px;
+}
+#bottom-nav select {
+    border-radius: 3px;
+    border: 0;
+}
+#main-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #DDDDDD;
+}
+.card {
+    width: 200px;
+    height: 85px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border:1px solid #000;
+    background-color: #F5F5F5;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 1px 1px 1px 1px  lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.fas {
+    font-size: 40px;
+}
+.animals {
+    color: #0000FF;
+}
+
+.vegetables {
+    color: #FFA500;
+}
+.users {
+    color: #800080;
+}
