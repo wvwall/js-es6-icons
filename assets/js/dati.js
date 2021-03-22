@@ -161,11 +161,38 @@ const cards = [
 				$("#main-cards").children().addClass("users");
 			}
 			
-		
 	}); 
+
+	
 
 	/* for (let i = 0; i < cards.length; i++) {
 		$("#main-cards").children().html(`<i class = " ${cards[i].family} ${cards[i].prefix}${cards[i].name} "></i>`);
 		
 	} */
+
+	$("#animals").click( () => {
+		$(".veg").addClass("none");
+		$(".us").addClass("none");
+		$(".an").removeClass("none");
+	});
+
+	$("#veg").click( () => {
+		$(".an").addClass("none");
+		$(".us").addClass("none");
+		$(".veg").removeClass("none");
+	});
+
+	$("#user").click( () => {
+		$(".an").addClass("none");
+		$(".veg").addClass("none");
+		$(".us").removeClass("none");
+	});
+	$("#all").click( () => {
+		$(".an").removeClass("none");
+		$(".veg").removeClass("none");
+		$(".us").removeClass("none");
+	});
+
+
+
 });
