@@ -165,8 +165,8 @@ const cards = [
 	});
 
 	
-
 	//MOSTRO AL CLICK LE CARDS SELEZIONATE
+
 
 	$("#animals").click( () => {
 		$(".veg").addClass("none");
@@ -185,6 +185,7 @@ const cards = [
 		$(".veg").addClass("none");
 		$(".us").removeClass("none");
 	});
+
 	$("#all").click( () => {
 		$(".an").removeClass("none");
 		$(".veg").removeClass("none");
