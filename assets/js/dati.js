@@ -104,7 +104,7 @@ const cards = [
 
 	//foreach && template literal
 
-	cards.forEach((element) => {
+	/* cards.forEach((element) => {
 
 		if (element.type === "animal") {
 			$("#main-cards").append(`<div class= "card an"><i class =  " ${element.family} ${element.prefix}${element.name} "></i><h4> ${element.name} </h4></div>`);
@@ -114,26 +114,55 @@ const cards = [
 			$("#main-cards").append(`<div class= "card us"><i class = " ${element.family} ${element.prefix}${element.name} "></i><h4> ${element.name} </h4></div>`);
 		}
 		
-	});
+	}); */
 
-/* 
-	cards.forEach((element) => {
-		
-			if (element.type === "animal" ) {
-				$("#main-cards").children().addClass("animals");
-			} else if (element.type === "vegetable") {
-				$("#main-cards").children().addClass("vegetables");
-			} else {
-				$("#main-cards").children().addClass("users");
+// CREO ARRAY COLORS
+
+	const colors = ["blue","orange","purple"];
+
+
+//MAPPO NUOVO ARRAY COLOR CON ELEMENTI CARDS + KEY COLOR
+
+	const cardsColors = cards.map((element,i,array)=> {
+
+		if (element.type === "animal") {
+
+			let obj = {
+				...element,
+				color : colors[0]
 			}
-			
-	});  */
+			return obj;
+		}else if (element.type === "vegetable") {
 
-	//AGGIUNGO LA CLASSE PER I VARI COLORI DELLE ICONE
+			let obj = {
+				...element,
+				color : colors[1]
+			}
+			return obj;
+		}else {
 
-		$(".an i").addClass("animals");
-		$(".veg i").addClass("vegetables");
-		$(".us i").addClass("users");
+			let obj = {
+				...element,
+				color : colors[2]
+			}
+			return obj;
+		}
+	});
+	console.log(cardsColors);
+
+//INSERISCO KEY COLOR COME CLASSE
+
+	cardsColors.forEach((element) => {
+
+		if (element.type === "animal") {
+			$("#main-cards").append(`<div class= "card an"><i class =  " ${element.color} ${element.family} ${element.prefix}${element.name} "></i><h4> ${element.name} </h4></div>`);
+		}else if (element.type === "vegetable"){
+			$("#main-cards").append(`<div class= "card veg"><i class = "${element.color} ${element.family} ${element.prefix}${element.name} "></i><h4> ${element.name} </h4></div>`);
+		}else {
+			$("#main-cards").append(`<div class= "card us"><i class = "${element.color} ${element.family} ${element.prefix}${element.name} "></i><h4> ${element.name} </h4></div>`);
+		}
+		
+	});
 
 	
 

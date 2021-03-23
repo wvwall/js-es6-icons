@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 50px;
     background-color: #fff;
+
     display: flex;
     align-items: center;
 }
@@ -26,6 +27,7 @@ body {
     width: 100vw;
     height: 60px;
     background-color: #29B1DD;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +45,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
     background-color: #DDDDDD;
 }
 .card {
@@ -57,6 +60,7 @@ body {
     border-radius: 8px;
     border: 0;
     box-shadow: 1px 1px 2px 2px  lightgray;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,14 +73,14 @@ body {
 .fas {
     font-size: 35px;
 }
-.animals {
+.blue {
     color: #0000FF;
 }
 
-.vegetables {
+.orange {
     color: #FFA500;
 }
-.users {
+.purple {
     color: #800080;
 }
 
